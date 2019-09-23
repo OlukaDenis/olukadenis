@@ -8065,26 +8065,31 @@ textarea.form-control {
   animation: ease-in;
 }
 
-/* FOOTER */ 
+/* SOCIAL ICONS */ 
 
-.footer-icons {
+.social-icons {
   display: block;
  
 }
-.footer-icons ul{
+.social-icons ul{
   list-style-type: none;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.footer-icons ul li {
+.social-icons ul li {
   list-style: none;
   display: inline-block;
   font-size: 30px;
   padding: 20px;
 }
+@media (max-width: 400px){ 
+.social-icons ul li{
+  font-size: 20px;
+}
+}
 
-.footer-icons ul li a:hover {
+.social-icons ul li a:hover {
   color: white;
   outline-color: white; 
   padding: 6px;
