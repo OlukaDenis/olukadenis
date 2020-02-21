@@ -7,9 +7,12 @@ $font-secondary: 'Poppins',Arial, sans-serif;
 $white: #fff;
 $black: #000000;
 // $darken: #3a4348;
+$background:  #001a33;
 
 $primary: #f05d23;
 $secondary: #5dd28e;
+$grayish: #999999;
+$whitish: #d9d9d9;
 
 
 @mixin border-radius($radius) {
@@ -195,6 +198,11 @@ h1, h2, h3, h4, h5,
 			}
 		}
 	}
+
+	#hire-button {
+		padding-top: 50px;
+	}
+
 	.colorlib-footer {
 		position: absolute;
 		bottom: 40px;
@@ -230,14 +238,27 @@ h1, h2, h3, h4, h5,
 }
 
 #colorlib-main {
+	background-color: $background;
 	width: 100%;
 	float: right;
 	@include transition(.5s);
 	@include media-breakpoint-up(lg){
 		width: 75%;
 	}
+
+		//Projects hero
+	#projects-hero {
+		background-image: url(images/bg_1.jpg)
+	}
 }
 
+.about-container {
+	padding: 1em 1.8em;
+
+	@include media-breakpoint-up(lg){
+		padding: 4em 1.8em;
+	}
+}
 
 // Burger Menu
 .colorlib-nav-toggle {
@@ -358,7 +379,7 @@ h1, h2, h3, h4, h5,
 		bottom: 0;
 		content: '';
 		opacity: .7;
-		background: $white;
+		background: black;
 		z-index: 0;
 	}
 	&.hero-wrap-2{
@@ -366,6 +387,11 @@ h1, h2, h3, h4, h5,
 			opacity: .8;
 		}
 	}
+
+	.projects-hero {
+		height: 100px;
+	}
+
 	.text{
 		z-index: 1;
 		font-size: 18px;
@@ -382,8 +408,11 @@ h1, h2, h3, h4, h5,
 			font-weight: 300;
 		}
 		h1{
+			color: $whitish;
 			letter-spacing: 1px;
 			font-weight: 900;
+			padding-top: 50px;
+			text-transform: uppercase;
 		}
 		.btn-custom{
 			font-weight: 400;
@@ -778,7 +807,10 @@ h1, h2, h3, h4, h5,
 			font-weight: 700;
 			font-size: 28px;
 			a{
-				color: $black;
+				color: white;
+			}
+			&:hover{
+				text-decoration: underline;
 			}
 		}
 		.meta-wrap{
@@ -902,18 +934,36 @@ textarea.form-control {
 	visibility: hidden;
 }
 
-
 .about-author{
 	img{
 		@include border-radius(50%);
-	}
-	.desc{
-		h3{
-			font-size: 20px;
-		}
-	}
-	.bio{
+	}	
 
+	h3{
+		font-size: 20px;
+	}
+
+	h1 {
+		color: white;
+	}
+
+	.title {
+		color: $grayish;
+		text-transform: uppercase;
+	}
+
+	.info {
+		color: $whitish;
+	}
+
+	.social-icons {
+		ul {
+			list-style-type: none;
+			li {
+				display: inline-block;
+				padding: 10px;
+			}
+		}
 	}
 }
 
@@ -1205,9 +1255,16 @@ textarea.form-control {
 //### .block-4
 .contact-section {
 	.contact-info{
+		.contact-title {
+			color: white;
+		}
 		p{
+			span {
+				font-weight: bold;
+				border-bottom: 2px solid $primary;
+			}
 			a{
-				color: lighten($black,10%);
+				color: lighten($whitish,10%);
 			}
 			span{}
 		}
