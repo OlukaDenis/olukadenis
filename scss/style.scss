@@ -266,13 +266,13 @@ h1, h2, h3, h4, h5,
   text-decoration: none;
   &.active i {
 		&::before, &::after {
-			background: $black;
+			background: white;
 		}
   }
   &.dark {
   	&.active i {
 			&::before, &::after {
-				background: $black;
+				background: white;
 			}
 	  }
   }
@@ -285,17 +285,17 @@ h1, h2, h3, h4, h5,
 	  display: inline-block;
 	  width: 30px;
 	  height: 2px;
-	  color: $black;
+	  color: white;
 	  font:bold 14px/.4 Helvetica;
 	  text-transform: uppercase;
 	  text-indent:-55px;
-	  background: $black;
+	  background: white;
 	  transition: all .2s ease-out;
 		 &::before, &::after {
 	  	  content:'';
 		  width: 30px;
 		  height: 2px;
-		  background: $black;
+		  background: white;
 		  position: absolute;
 		  left:0;
 		  @include transition(.2s);

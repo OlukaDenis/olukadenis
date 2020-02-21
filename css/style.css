@@ -6936,9 +6936,9 @@ h1, h2, h3, h4, h5,
   cursor: pointer;
   text-decoration: none; }
   .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
-    background: #000000; }
+    background: white; }
   .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
-    background: #000000; }
+    background: white; }
   .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -6947,17 +6947,17 @@ h1, h2, h3, h4, h5,
     display: inline-block;
     width: 30px;
     height: 2px;
-    color: #000000;
+    color: white;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #000000;
+    background: white;
     transition: all .2s ease-out; }
     .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
       content: '';
       width: 30px;
       height: 2px;
-      background: #000000;
+      background: white;
       position: absolute;
       left: 0;
       -moz-transition: all 0.2s ease;
