@@ -6783,6 +6783,7 @@ h1, h2, h3, h4, h5,
   padding-bottom: 40px;
   padding-left: 3em;
   padding-right: 3em;
+  text-align: center;
   width: 25%;
   position: fixed;
   bottom: 0;
@@ -7550,6 +7551,13 @@ textarea.form-control {
     border-color: transparent; }
   60% {
     border-color: #f05d23; } }
+.about-author h1 {
+  color: white;
+  font-weight: 900; }
+.about-author h4 {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem; }
 .about-author .title {
   color: #f05d23;
   text-transform: uppercase;
