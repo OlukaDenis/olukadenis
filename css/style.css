@@ -6747,7 +6747,6 @@ body {
       -o-transform: translateX(0);
       transform: translateX(0);
       width: 270px;
-      background: #fff;
       z-index: 999;
       position: fixed; }
     body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
@@ -6789,9 +6788,9 @@ h1, h2, h3, h4, h5,
   bottom: 0;
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
   z-index: 1001;
-  background-image: url("images/texture.jpg");
+  background: repeating-linear-gradient(-120deg, #e0e0e0 5px, white 8px, #d6d5d5 5px, #f1f1f1 6px);
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -6808,8 +6807,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateX(-270px);
       -o-transform: translateX(-270px);
       transform: translateX(-270px);
-      padding-top: 2em;
-      background: rgba(0, 0, 0, 0.04); } }
+      padding-top: 2em; } }
   #colorlib-aside #colorlib-logo {
     margin-bottom: 2.5em;
     display: block;
@@ -7385,19 +7383,32 @@ h1, h2, h3, h4, h5,
         border-color: #fff;
         color: #f05d23; }
 
+/*------------------------------------------------
+				PROJECTCS
+------------------------------------------------*/
 .blog-entry {
   margin-bottom: 6em; }
   .blog-entry ul {
     list-style-type: none;
     padding: 0 0; }
+  .blog-entry img {
+    height: inherit;
+    width: 100%; }
+    @media (max-width: 767.98px) {
+      .blog-entry img {
+        height: 85%;
+        margin: 20px 0; } }
   .blog-entry .img {
     display: block;
-    height: 400px;
+    height: 330px;
     position: relative;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
+    @media (max-width: 767.98px) {
+      .blog-entry .img {
+        height: 300px; } }
     .blog-entry .img .detail-overlay {
       display: none;
       background-color: rgba(0, 0, 0, 0.801);
@@ -7417,8 +7428,6 @@ h1, h2, h3, h4, h5,
           .blog-entry .img .detail-overlay li a:hover {
             border-radius: 50%;
             background-color: white; }
-    .blog-entry .img.img-2 {
-      height: 330px; }
     .blog-entry .img:hover .detail-overlay {
       display: flex;
       align-items: center;
@@ -7436,12 +7445,16 @@ h1, h2, h3, h4, h5,
       letter-spacing: 1px;
       margin-bottom: 0.6rem; }
       .blog-entry .text .category span {
+        display: inline-block;
         text-align: center;
         padding: 6px 10px;
-        margin: 0 2px;
+        margin: 3px 2px;
         border-radius: 20px;
         background-color: #06376685;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+        @media (max-width: 767.98px) {
+          .blog-entry .text .category span {
+            padding: 4px 8px; } }
     .blog-entry .text h3 {
       font-weight: 700;
       font-size: 28px; }
@@ -7554,10 +7567,16 @@ textarea.form-control {
 .about-author h1 {
   color: white;
   font-weight: 900; }
+  @media (max-width: 767.98px) {
+    .about-author h1 {
+      font-size: 1.5rem; } }
 .about-author h4 {
   color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 1.5rem; }
+  @media (max-width: 767.98px) {
+    .about-author h4 {
+      font-size: 1rem; } }
 .about-author .title {
   color: #f05d23;
   text-transform: uppercase;
@@ -7576,13 +7595,17 @@ textarea.form-control {
   letter-spacing: .15em;
   /* Adjust as needed */
   animation: typing 4s steps(30, end), blink-caret 0.8s step-end infinite; }
+  @media (max-width: 767.98px) {
+    .about-author .title {
+      font-size: 1rem;
+      width: 90%; } }
 .about-author .info {
   font-family: "Annie Use Your Telescope", cursive;
   font-size: 2rem;
   color: #d9d9d9; }
   @media (max-width: 767.98px) {
     .about-author .info {
-      font-size: 14px; } }
+      font-size: 1.5rem; } }
 .about-author .social-icons ul {
   list-style-type: none; }
   .about-author .social-icons ul li {
