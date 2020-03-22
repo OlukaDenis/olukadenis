@@ -56,7 +56,6 @@ body {
 		#colorlib-aside {
 			@include translateX(0);
 			width: 270px;
-			background: $white;
 			z-index: 999;
 			position: fixed;
 		}
@@ -103,10 +102,9 @@ h1, h2, h3, h4, h5,
 	bottom: 0;
 	top: 0;
 	left: 0;	
-	overflow-y: scroll;
+	overflow-y: hidden;
 	z-index: 1001;
-	// background: rgba(0,0,0,.04);
-	background-image: url('images/texture.jpg');
+	background: repeating-linear-gradient( -120deg, rgb(224, 224, 224) 5px, rgb(255, 255, 255) 8px, rgb(214, 213, 213) 5px, rgb(241, 241, 241) 6px);
 	@include transition(.5s);
 	@include media-breakpoint-up(lg){
 		width: 25%;
@@ -115,7 +113,6 @@ h1, h2, h3, h4, h5,
 		width: 270px;
 		@include translateX(-270px);
 		padding-top: 2em;
-		background: rgba(0,0,0,.04);
 	}
 	#colorlib-logo {
 		margin-bottom: 2.5em;
@@ -749,7 +746,7 @@ h1, h2, h3, h4, h5,
 //BUTTON
 .btn {
 	cursor: pointer;
-	@include border-radius(30px);
+	@include border-radius(5px);
 	box-shadow: none!important;
 	&:hover, &:active, &:focus {
 		outline: none;
@@ -796,21 +793,46 @@ h1, h2, h3, h4, h5,
 		}
 	}
 }
+#resume-button {
+	.btn {
+		border: 1px solid $primary;
+		background-color: rgba(255, 255, 255, 0);
+		color: $primary;
+		&:hover{
+			background-color: $primary;
+			color: white;
+		}
+	}
+}
 
 
-
-//BLOG ENTRY
+/*------------------------------------------------
+				PROJECTCS
+------------------------------------------------*/
 .blog-entry{
 	margin-bottom: 6em;
 	ul{
 		list-style-type: none;
 		padding: 0 0;
 	}
+
+	img{
+		height: inherit; 
+		width: 100%; 
+		@include media-breakpoint-down(sm){
+			height: 85%;
+			margin: 20px 0;
+		}
+	}
+
 	.img{
 		display: block;
-		height: 400px;
+		height: 330px;
 		position: relative;
 		@include border-radius(3px);
+		@include media-breakpoint-down(sm){
+			height: 300px;			
+		}
 
 		.detail-overlay{
 			display: none;
@@ -838,7 +860,7 @@ h1, h2, h3, h4, h5,
 		}
 
 		&.img-2{
-			height: 330px;
+			// height: 300px;
 		}
 
 		&:hover{
@@ -862,16 +884,18 @@ h1, h2, h3, h4, h5,
 			font-size: 12px;
 			letter-spacing: 1px;
 			margin-bottom: 0.6rem;
-			// display: grid;
-			// grid-template-columns: 1fr 1fr 1fr 1fr;
-			// row-gap: 2px;
+
 			span{
+				display: inline-block;
 				text-align: center;
 				padding: 6px 10px;
-				margin: 0 2px;
+				margin: 3px 2px;
 				border-radius: 20px;
 				background-color: #06376685;
 				box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+				@include media-breakpoint-down(sm){
+					padding: 4px 8px					
+				}
 			}
 		}
 		h3{
@@ -1021,12 +1045,18 @@ textarea.form-control {
 	h1{
 		color: white;
 		font-weight: 900;
+		@include media-breakpoint-down(sm){
+			font-size: 1.5rem;
+		}
 	}
 
 	h4{
 		color: white;
 		font-family: 'Dancing Script', cursive;
 		font-size: 1.5rem;
+		@include media-breakpoint-down(sm){
+			font-size: 1rem;
+		}
 	}
 
 	.title {
@@ -1044,6 +1074,10 @@ textarea.form-control {
 		animation: 
 			typing 4s steps(30, end),
 			blink-caret .80s step-end infinite;
+		@include media-breakpoint-down(sm){
+			font-size: 1rem;
+			width: 90%;
+		}
 	}
 
 	.info {
@@ -1051,7 +1085,7 @@ textarea.form-control {
 		font-size: 2rem;
 		color: $whitish;
 			@include media-breakpoint-down(sm){
-			font-size: 14px;
+			font-size: 1.5rem;
 		}
 	}
 
