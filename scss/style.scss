@@ -746,7 +746,7 @@ h1, h2, h3, h4, h5,
 //BUTTON
 .btn {
 	cursor: pointer;
-	@include border-radius(30px);
+	@include border-radius(5px);
 	box-shadow: none!important;
 	&:hover, &:active, &:focus {
 		outline: none;
@@ -790,6 +790,17 @@ h1, h2, h3, h4, h5,
 				border-color: $white;
 				color: $primary;
 			}
+		}
+	}
+}
+#resume-button {
+	.btn {
+		border: 1px solid $primary;
+		background-color: rgba(255, 255, 255, 0);
+		color: $primary;
+		&:hover{
+			background-color: $primary;
+			color: white;
 		}
 	}
 }
