@@ -1,10 +1,9 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
-$font-primary: 'Montserrat',Arial, sans-serif;
 $font-secondary: 'Poppins',Arial, sans-serif;
-$annie-font: 'Annie Use Your Telescope', cursive;
-$source-code: 'Source Code Pro', monospace;
+$cursive-font: 'Bad Script', cursive;
+$font-primary: 'Montserrat', sans-serif;
 
 $white: #fff;
 $black: #000000;
@@ -45,7 +44,7 @@ html {
 	// overflow-x: hidden;
 }
 body {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: $font-primary;
 	background: $white;
 	font-size: 15px;
 	line-height: 1.8;
@@ -1052,7 +1051,8 @@ textarea.form-control {
 
 	h4{
 		color: white;
-		font-family: 'Dancing Script', cursive;
+		font-family: $cursive-font;
+		// font-style: italic;
 		font-size: 1.5rem;
 		@include media-breakpoint-down(sm){
 			font-size: 1rem;
@@ -1062,7 +1062,7 @@ textarea.form-control {
 	.title {
 		color: $primary;
 		text-transform: uppercase;
-		font-family: $source-code;
+		font-family: $font-primary;
 		font-size: 1.3rem;
 		width: 60%;
 		padding-left: 1rem;
@@ -1081,8 +1081,10 @@ textarea.form-control {
 	}
 
 	.info {
-		font-family: $annie-font;
+		font-family: $cursive-font;
 		font-size: 2rem;
+		// font-style: italic;
+		letter-spacing: 1px;
 		color: $whitish;
 			@include media-breakpoint-down(sm){
 			font-size: 1.5rem;

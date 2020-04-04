@@ -6732,7 +6732,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #dee2e6 !important; } }
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #fff;
   font-size: 15px;
   line-height: 1.8;
@@ -6837,7 +6837,7 @@ h1, h2, h3, h4, h5,
         text-decoration: none;
         position: relative;
         padding: 10px 0;
-        font-family: "Montserrat", Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
         -moz-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
@@ -7580,7 +7580,7 @@ textarea.form-control {
       font-size: 1.5rem; } }
 .about-author h4 {
   color: white;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Bad Script", cursive;
   font-size: 1.5rem; }
   @media (max-width: 767.98px) {
     .about-author h4 {
@@ -7588,7 +7588,7 @@ textarea.form-control {
 .about-author .title {
   color: #f05d23;
   text-transform: uppercase;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   width: 60%;
   padding-left: 1rem;
@@ -7608,8 +7608,9 @@ textarea.form-control {
       font-size: 1rem;
       width: 90%; } }
 .about-author .info {
-  font-family: "Annie Use Your Telescope", cursive;
+  font-family: "Bad Script", cursive;
   font-size: 2rem;
+  letter-spacing: 1px;
   color: #d9d9d9; }
   @media (max-width: 767.98px) {
     .about-author .info {
