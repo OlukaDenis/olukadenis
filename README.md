@@ -1,6 +1,6 @@
 ### Hi there, 👋
 # I'm Denis Oluka
-[![Twitter Badge](https://img.shields.io/badge/-@dennycodev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/dennycodev)](https://twitter.com/ishmo256)
+[![Twitter Badge](https://img.shields.io/badge/-@dennycodev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/dennycodev)](https://twitter.com/dennycodev)
 
 I write code
 
