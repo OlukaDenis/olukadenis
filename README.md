@@ -1,10 +1,12 @@
 ### Hi there, 👋
 # I'm Denis Oluka
-[![Twitter Badge](https://img.shields.io/badge/-@dennycodev-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/dennycodev)](https://twitter.com/dennycodev)
+[![Twitter Badge](https://img.shields.io/badge/Denny-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/dennycodev)](https://twitter.com/dennycodev)
+  [![LinkedIn Badge](https://img.shields.io/badge/Denis-Oluka-blue?style=flat-square&labelColor=blue&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/denis-oluka)](https://www.linkedin.com/in/denis-oluka)
 
 I write code
 
 🌱 I’m currently learning SwiftUI
+
 💬 Ask me about Android development 
 
 ![Denis Oluka's Stats](https://github-readme-stats.vercel.app/api?username=OlukaDenis&show_icons=true&theme=radical)
